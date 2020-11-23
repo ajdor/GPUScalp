@@ -3,7 +3,6 @@
 // @namespace   Violentmonkey Scripts
 // @match       https://www.topachat.com/pages/produits_cat_est_micro_puis_rubrique_est_wgfx_pcie_puis_f_est_58-11445.html
 // @match       https://shop.hardware.fr/composants/carte-graphique/c7492/+fsort-8+fp-h970+fv121-19183/
-// @match       https://www.ldlc.com/informatique/pieces-informatique/carte-graphique-interne/c4684/+fp-l569h965+fv121-19183.html
 // @grant       GM_setValue
 // @grant       GM_getValue
 // @version     1.0
@@ -21,8 +20,6 @@ function checkOutOfStock (hostname) {
     case "shop.hardware.fr":
       return document.querySelectorAll(".button.picto-seul:not(.disabled)");
       
-    case "www.ldlc.com":
-      return document.querySelectorAll(".button.picto-seul:not(.disabled):not([style])");
     default:
       // code block
       return;
@@ -42,11 +39,6 @@ function openProductPage (hostname, item) {
     case "shop.hardware.fr":
       GM_setValue('hardware', GM_getValue('hardware', 0) + 1);
       window.open(item.parentElement.parentElement.getElementsByTagName("a")[0].href);
-      break;
-      
-    case "www.ldlc.com":
-      GM_setValue('ldlc', GM_getValue('ldlc', 0) + 1);
-      window.open(item.parentElement.parentElement.parentElement.querySelector("div.pic > a").href);
       break;
       
     default:
