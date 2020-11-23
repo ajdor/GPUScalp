@@ -7,4 +7,8 @@ This script will alert you whenever a new GPU is available on either of these UR
 Can be easily modified to match any other product by changing the URLs. 
 Website must remain open in tab (i'd recommend pinning the tab to avoid accidentally closing it).
 
+Website must be allowed to open new tabs (or pop-ups depending on your browser).
+It may also be required to allow audio to be played since a notification sound is played whenever a GPU is available.
+
 I am making this available since it has helped me grab a GPU for personal usage. No one likes a for profit scalper.
+
