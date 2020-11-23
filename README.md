@@ -5,6 +5,6 @@ This script will alert you whenever a new GPU is available on either of these UR
 - https://shop.hardware.fr/composants/carte-graphique/c7492/+fsort-8+fp-h970+fv121-19183/
 
 Can be easily modified to match any other product by changing the URLs. 
-Website must remain open.
+Website must remain open in tab (i'd recommend pinning the tab to avoid accidentally closing it).
 
 I am making this available since it has helped me grab a GPU for personal usage. No one likes a for profit scalper.
