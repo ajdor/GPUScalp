@@ -11,7 +11,6 @@
 // ==/UserScript==
 
 function checkOutOfStock (hostname) {
-  console.log("checkOutOfStock: "+ hostname);
   switch(hostname) {
       
     case "www.topachat.com":
@@ -27,8 +26,6 @@ function checkOutOfStock (hostname) {
 }
 
 function openProductPage (hostname, item) {
-  
-  console.log("checkOutOfStock: "+ hostname);
   switch(hostname) {
       
     case "www.topachat.com":
